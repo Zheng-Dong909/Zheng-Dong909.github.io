@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Merriweather', serif; 
+  }
+
+  /* 任务栏样式 */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5px;
+    position: sticky;
+    top: 0px;
+  }
+  .navbar .logo {
+    font-size: 18px;
+  }
+  .nav-links {
+    list-style-type: none;
+  }
+  .nav-links li {
+    display: inline;
+    margin-right: 20px;
+  }
+  .nav-links li:last-child {
+    margin-right: 400px;
+  }
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+  /* 图像样式 */
+  .logo img {
+    width: 80px; /* 设置图像的宽度 */
+    height: auto; /* 根据宽度自动调整高度，以保持纵横比 */
+    margin-right: 2px; /* 设置图像与文本之间的右边距 */
+    margin-left: 400px;
+  }
+
+
+  /* 样式 */
+.content {
+    display: flex; /* 使用Flex布局 */
+    align-items: center; /* 垂直居中对齐内容 */
+    padding: 20px; /* 添加一些内边距 */
+    margin-right: 300px;
+    margin-left: 300px;
+    margin-top: 30px;
+}
+
+.text {
+    flex: 1; /* 占据剩余空间 */
+    padding: 20px; /* 添加内边距 */
+}
+
+.image {
+    flex: 1; /* 占据剩余空间 */
+    text-align: center; /* 图像水平居中 */
+}
+
+.image img {
+    max-width: 80%; /* 图像最大宽度为容器宽度 */
+    height: auto; /* 根据宽度自动调整高度，以保持纵横比 */
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 15px;
+    text-align: justify
+}
+
+p {
+    font-size: 14px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: justify;
+}
+
+.content-profile {
+    display: flex;
+    justify-content: space-between; /* 水平对齐方式为两边对齐 */
+    align-items: flex-start; /* 垂直对齐方式为顶部对齐 */
+    margin-right: 300px;
+    margin-left: 300px;
+    margin-top: 5px;
+}
+
+.projects,
+.skills {
+    flex: 1; /* 平分宽度 */
+    padding: 20px; /* 添加一些内边距 */
+}
+
+.project-item,
+.skill-item {
+    margin-bottom: 20px; /* 添加项目之间的间距 */
+}
+
+
+

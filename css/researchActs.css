@@ -41,55 +41,103 @@ body {
     margin-left: 400px;
   }
 
-
   /* 样式 */
 .content {
-    display: flex; /* 使用Flex布局 */
-    align-items: center; /* 垂直居中对齐内容 */
-    padding: 20px; /* 添加一些内边距 */
-    margin-right: 300px;
-    margin-left: 300px;
-    margin-top: 30px;
+  display: flex; /* 使用Flex布局 */
+  margin-top: 30px;
+  margin-left: 300px;
+  margin-right: 300px;
+  justify-content: space-between; /* 子容器上下均匀分布 */
+  align-items: flex-start; /* 子容器左对齐 */
+  gap: 40px;
+}
+
+.text-and-technology {
+  display: flex;
+  flex-direction: column; /* 垂直排列 */
+  justify-content: space-between; /* 子容器上下均匀分布 */
+  align-items: flex-start; /* 子容器左对齐 */
+  height: 500px;
+  width: 700px;
 }
 
 .text {
-    flex: 1; /* 占据剩余空间 */
-    padding: 20px; /* 添加内边距 */
+  display: flex;
+  flex-direction: column;
 }
 
-.image {
-    flex: 1; /* 占据剩余空间 */
-    text-align: center; /* 图像水平居中 */
+.technology {
+  display: flex;
+  flex-direction: column;
+}
+
+.technologies-item {
+  display: flex;
+  gap: 2px;
+}
+
+.technologies-item img {
+  width: 50px;
+  height: 50px;
 }
 
 .image img {
-    max-width: 80%; /* 图像最大宽度为容器宽度 */
-    height: auto; /* 根据宽度自动调整高度，以保持纵横比 */
+ max-width: 80%;
+ justify-content: center;
 }
+
+.image{
+  height: 500px;
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 
 h1 {
     font-size: 24px;
 }
 
 h2 {
-    font-size: 20px;
+    font-size: 18px;
+    margin: 1px;
+
 }
 
 h3 {
-    font-size: 18px;
+    font-size: 16px;
+    margin: 1px;
+    justify-content: center;
 }
 
 h4 {
     font-size: 15px;
-    text-align: justify
+    justify-content: center;
 }
 
 p {
     font-size: 14px;
     margin-left: 10px;
     margin-right: 10px;
-    text-align: justify;
+    text-align: left;
 }
+
+li::before {
+  display: inline-block;
+  width: 1em; /* 可以根据需要调整大小 */
+  margin-right: 5px; /* 可以根据需要调整间距 */
+}
+
+ul {
+  list-style-position: outside;
+}
+
+ul li {
+  text-align: justify;
+}
+
 
 .content-profile {
     display: flex;
@@ -111,5 +159,31 @@ p {
     margin-bottom: 20px; /* 添加项目之间的间距 */
 }
 
+.button-container {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 5px;
+}
 
+.custom-button {
+display: inline-block;
+padding: 10px 20px;
+background-color: rgba(0, 0, 0, 0); /* 背景颜色设置为透明 */
+color: #3498db;
+text-align: left;
+cursor: pointer;
+text-decoration: none;
+border: 2px solid #ccc; /* 边框颜色设置为灰色 */
+border-radius: 5px;
+transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+box-shadow: 2px 4px rgba(0, 0, 0, 0.2);
+margin: 0 2px; /* 减小按钮之间的左右外边距 */
+}
+
+/* 当鼠标悬停在按钮上时的样式 */
+.custom-button:hover {
+background-color: rgba(0, 0, 0, 0.1); /* 添加悬停时的背景颜色 */
+transform: scale(1.05);
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 

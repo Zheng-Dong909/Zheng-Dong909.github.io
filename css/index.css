@@ -70,32 +70,14 @@ h1 {
   bottom: 300px;
 }
 
-/* 样式 */
-.button-container {
+.jellycat-items {
   display: flex;
-  justify-content: space-around;
-  margin-left: 700px;
-  margin-right: 700px;
-  margin-top: 20px;
+  width: 500px;
+  height: 100px;
+  margin-left: 680px;
 }
 
-.custom-button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: rgba(0, 0, 0, 0); /* 背景颜色设置为透明 */
-  color: #3498db;
-  text-align: center;
-  cursor: pointer;
-  text-decoration: none;
-  border: 2px solid #ccc; /* 边框颜色设置为灰色 */
-  border-radius: 5px;
-  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+.jellycat-items img {
+  max-width: 50%;
 }
 
-/* 当鼠标悬停在按钮上时的样式 */
-.custom-button:hover {
-  background-color: rgba(0, 0, 0, 0.1); /* 添加悬停时的背景颜色 */
-  transform: scale(1.05);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}

@@ -45,29 +45,29 @@ h1 {
   margin-top: 0;
   margin: 0;
   font-family: 'Merriweather', serif;
+  font-size: 26px;
 }
+
 .profile p {
   margin-left: 500px;
   margin-right: 500px;
 }
 
 .top-container {
-  background-color: #EFFFFD;
-  position: relative;
   padding-top: 100px;
   border: 10px;
   padding: 20px;
 }
 
 .top-cloud {
+  right: 500px;
+  top: 200px;
   position: absolute;
-  right: 300px;
-  top: 50px;
 }
 .bottom-cloud {
+  left: 400px;
+  bottom: 600px;
   position: absolute;
-  left: 300px;
-  bottom: 300px;
 }
 
 .jellycat-items {
@@ -81,3 +81,48 @@ h1 {
   max-width: 50%;
 }
 
+
+.middle-container {
+  display: flex; /* 使用Flex布局 */
+  margin-left: 400px;
+  margin-right: 400px;
+  justify-content: space-between; /* 子容器上下均匀分布 */
+  align-items: flex-start; /* 子容器左对齐 */
+  gap: 10px;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center
+}
+
+.middle-container img {
+  width: 160px;
+  height: auto;
+}
+
+.img-introduction {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column; /* 垂直排列 */
+  align-items: flex-start; /* 子容器左对齐 */
+}
+
+h2 {
+  margin-top: 0;
+  margin: 0;
+  font-family: 'Merriweather', serif;
+  font-size: 18px
+}
+
+h3 {
+  text-align: left;
+  font-size: 18px;
+  margin: 5px;
+}
